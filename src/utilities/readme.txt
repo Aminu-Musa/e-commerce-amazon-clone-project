@@ -1,0 +1,1 @@
+The utility folder contains only reuseable component, such as props and lot more
