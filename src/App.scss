@@ -998,20 +998,32 @@ Link {
       flex: 1;
       padding: 20px;
   }
-
-
 }
 
 .dashboard-menu {
   background: #181F2C;
   padding-left: 20px;
-  flex-basis: 250px;
+  width: fit-content;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   padding-bottom: 2%;
+  // padding-right: 10px;
 
-  // display: none;
+  .open_close_menu{
+    margin-top: 5%;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    padding: 2px;
+    width: fit-content;
+
+.close_menu{
+  font-weight: bold;
+  // color: red;
+}
+
+  }
+
+
   .brand {
       min-height: 80px;
       padding-top: 20px;
@@ -1053,6 +1065,19 @@ Link {
   padding-bottom: 10px;
   color: #555;
   border-bottom: 1px dashed #333;
+  display: flex;
+  align-items: center;
+
+  div{
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .icon{
+    padding-bottom: 0;
+    border: 1px solid;
+    padding: 1px;
+  }
 }
 
 .new-product-container,
@@ -1133,19 +1158,19 @@ Link {
   .nav-link {
       text-decoration: none;
       color: #fff;
-      padding: 10px 5px;
+      padding: 20px 5px;
       display: flex;
       align-items: center;
       gap: 15px;
       padding-left: 20px;
   }
 
-  .nav-link:hover {
+  .active {
       background: #fff;
       color: #181F2C;
       font-weight: bold;
-      border-bottom-left-radius: 20px;
-      border-top-left-radius: 20px;
+      border-bottom-left-radius: 50px;
+      border-top-left-radius: 50px;
   }
 
 }

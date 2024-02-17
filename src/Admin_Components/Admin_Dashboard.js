@@ -1,12 +1,10 @@
-// import PageHeader from "../utilities/PageHeader"
-
 import PageHeader from "../Admin_Components/Admin_Assets/utilities/PageHeader"
 
 
 function Admin_Dashboard() {
   return (
     <div className="pages">
-      <PageHeader title='Dashboard' />
+      <PageHeader title='Dashboard'/>
       <p></p>
       <div className="home-container">
         <div className="box total-products">
